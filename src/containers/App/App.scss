@@ -1,12 +1,13 @@
 .app {
   text-align: center;
+  .logo {
+    animation: App-logo-spin infinite 2s linear;
+    height: 80px;
+    padding-top: 80px;
+  }
 }
 
-.logo {
-  animation: App-logo-spin infinite 2s linear;
-  height: 80px;
-  padding-top: 80px;
-}
+
 
 .header {
   background-color: lighten(#222, 10%);
