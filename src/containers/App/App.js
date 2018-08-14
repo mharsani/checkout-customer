@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import styles from './App.scss';
+import  Header from '../../components/Header/Header.js';
+
+
 
 class App extends Component {
   render() {
@@ -8,7 +11,7 @@ class App extends Component {
       <div className={styles.app}>
         <div className={styles.header}>
           <img src={logo} className={styles.logo} alt="logo" />
-          <h2>Congrats, you now have Sass & CSS Modules in your React project! <span role="img" aria-label="emoji">😎</span></h2>
+          <Header name='Matheus Harsani'/>
         </div>
       </div>
     );
