@@ -13,7 +13,7 @@ class App extends Component {
           <p className="App-intro">
             <Link to="/first-step">Ir para a página sobre \o/</Link>
           </p>
-          <Header name='Matheus Harsani'/>
+          <Header />
         </div>
       </div>
     );
