@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
 import styles from './App.scss';
+import { Link } from 'react-router-dom';
 import  Header from '../../components/Header/Header.js';
 
 
@@ -10,7 +10,9 @@ class App extends Component {
     return (
       <div className={styles.app}>
         <div className={styles.header}>
-          <img src={logo} className={styles.logo} alt="logo" />
+          <p className="App-intro">
+            <Link to="/first-step">Ir para a página sobre \o/</Link>
+          </p>
           <Header name='Matheus Harsani'/>
         </div>
       </div>
