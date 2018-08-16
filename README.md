@@ -1,2 +1,1 @@
-# checkout-customer
-Example checkout with react
+Example checkout using react (:

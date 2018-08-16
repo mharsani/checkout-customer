@@ -1,0 +1,17 @@
+.app {
+  text-align: center;
+  .logo {
+    animation: App-logo-spin infinite 2s linear;
+    height: 80px;
+    padding-top: 80px;
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
