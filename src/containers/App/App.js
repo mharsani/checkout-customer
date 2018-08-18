@@ -5,12 +5,15 @@ import  Header from '../../components/Header/Header.js';
 import Square from '../../components/Square/Square.js';
 import Button from '../../components/Square/Button.js';
 import LikeButton from '../../components/Square/like-button.js';
+import Timer from '../../components/Square/Timer';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-        color: 'orange'
+        color: 'orange',
+        showTimer: true,
+        time: 0
     }
   }
   render() {
@@ -31,10 +34,15 @@ class App extends Component {
           {color}
             </Button>
         ))}
-        <Button>
-          shadiuhd
-          </Button>
+        
          <LikeButton/>
+         
+         {this.state.showTimer && <Timer />}
+         <Button handleClick={() => {
+           this.setState({time: this.state.time + 10})
+         }}>
+          Hide Timer
+          </Button>
         </div>
         </div>
       </div>
