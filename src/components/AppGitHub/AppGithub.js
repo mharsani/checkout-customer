@@ -98,13 +98,10 @@ class AppGithub extends Component {
     render () {
         return (
             <AppContent 
-                userinfo={this.state.userinfo}
-                repos={this.state.repos}
-                starred={this.state.starred}
-                handleSearch={(e) => this.handleSearch(e) }
-                viewRepos = {(e) => this.viewRepos(e)}
-                viewStarred ={(e) => this.viewStarred('starred')}
-                isFetching ={this.state.isFetching}
+            {...this.state}
+            handleSearch={(e) => this.handleSearch(e) }
+            viewRepos = {(e) => this.viewRepos(e)}
+            viewStarred ={(e) => this.viewStarred('starred')}
             />
             )
         }
